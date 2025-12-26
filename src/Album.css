@@ -1,0 +1,153 @@
+* { box-sizing: border-box; }
+
+.albumScene{
+  min-height: 100vh;
+  width: 100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  pointer-events:none;
+   
+}
+
+.albumShell{
+  pointer-events:auto;
+  position: relative;
+  width: 1040px;
+  height: 650px;
+  margin: 0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow: visible;
+}
+
+
+.flipBook.coverCentered {
+  transform: translateX(-260px);
+}
+
+
+
+
+.page{ overflow: hidden; }
+
+
+.coverHit{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.pageGrid{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 36px 44px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  gap: 18px;
+}
+
+.polaroid{
+  display:flex;
+  align-items:center;
+  gap:24px;
+  min-height:180px;
+  width:100%;
+}
+.polaroid.left{ flex-direction: row; }
+.polaroid.right{ flex-direction: row-reverse; }
+
+.polaroidFrame{
+  width:240px;
+  height:220px;
+  flex-shrink:0;
+  padding: 10px 10px 26px 10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-size:100% 100%;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-color:#f8f8f8;
+}
+
+.polaroidPhoto{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     
+  object-position: center;
+  display: block;
+}
+
+
+.polaroidWindow{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.polaroidCaption{
+  flex:1;
+  white-space:pre-wrap;
+  font-size:18px;
+  color:#6f6b70;
+}
+
+
+.coverTitle{
+  font-family:"Playfair Display", serif;
+  font-size:48px;
+  text-shadow:0 4px 16px rgba(0,0,0,.6);
+  margin-bottom:12px;
+}
+.gLetter{ color:#EBA211; }
+.cLetter{ color:#862220; }
+.heart{ color:#fff; }
+.flipBook {
+  width: 1040px;
+  height: 650px;
+  position: relative;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  .albumScene{
+    margin-top: 24px;
+  }
+
+  .albumShell{
+    width: 100%;
+    height: auto;
+    transform: scale(0.7);          
+    transform-origin: top center;   
+  }
+
+  .flipBook{
+    width: 1040px;
+    height: 650px;
+  }
+}
+@media (max-width: 480px) {
+  .albumShell{
+    transform: scale(0.6);
+  }
+}
