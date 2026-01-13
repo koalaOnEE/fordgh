@@ -46,8 +46,14 @@ export default function Album() {
       ],
     },
     {
-      left: [{ img: "/images/1s.jpg", caption: "Bethlehem Trip\nDec 18, 2025", frameBg: polaroidBg }],
-      right: [{ img: "", caption: "", frameBg: polaroidBg }], 
+      left: [
+        { img: "/images/1s.jpg", caption: "Bethlehem Trip\nDec 18, 2025", frameBg: polaroidBg },
+        { img: "/images/6s.jpg", caption: "Nauticus lights\nDec 30,2025", frameBg: polaroidBg }
+      ],
+      right: [
+        { img: "", caption: "", frameBg: polaroidBg },
+        { img: "", caption: "", frameBg: polaroidBg }
+      ], 
     },
   ];
 
