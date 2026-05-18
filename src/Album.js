@@ -25,7 +25,7 @@ const coverBg = "/images/cover.png";
 const leftBg = "/images/page_left.png";
 const rightBg = "/images/page_right.png";
 const polaroidBg = "/images/polaroid.jpg";
-const polaroidBg2 = "/images/polaroid2.jpg";
+//const polaroidBg2 = "/images/polaroid2.jpg";
 
 export default function Album() {
   const bookRef = useRef(null);
