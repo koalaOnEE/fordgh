@@ -4,15 +4,16 @@ import Snowfall from 'react-snowfall';
 import Album from "./Album";
 import './App.css';
 
+const text = 
+  "Hey My Love\n\n" + 
+  "Spending our first everything together,\n\n"+
+  "I wanted to keep track of our moments.\n\n" +
+  "So I made a little photo album/scrapbook for us.\n\n"+
+  "Here's the beginning of our story and so on...";
+
 function App() {
 
 
-  const text = 
-    "Hey My Love\n\n" + 
-    "Spending our first everything together,\n\n"+
-    "I wanted to keep track of our moments.\n\n" +
-    "So I made a little photo album/scrapbook for us.\n\n"+
-    "Here's the beginning of our story and so on...";
 
   const [displayedText, setDisplayedText] = useState("");
 
