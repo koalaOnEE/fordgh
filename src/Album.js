@@ -51,9 +51,19 @@ export default function Album() {
         { img: "/images/6s.jpg", caption: "Nauticus lights\nDec 30,2025", frameBg: polaroidBg }
       ],
       right: [
+        { img: "/images/7.jpg", caption: "6MONTHS!!\nJan 15, 2026", frameBg: polaroidBg },
+        { img: "/images/8.jpg", caption: "Shamrock day\nMar 22, 2026", frameBg: polaroidBg }
+      ], 
+    },
+    {
+      left: [
         { img: "", caption: "", frameBg: polaroidBg },
         { img: "", caption: "", frameBg: polaroidBg }
-      ], 
+      ],
+      right: [
+        { img: "", caption: "", frameBg: polaroidBg },
+        { img: "", caption: "", frameBg: polaroidBg }
+      ],    
     },
   ];
 
